@@ -1,0 +1,34 @@
+:root {
+    --lightRed: hsl(0, 100%, 67%);  
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    --LightBlue: hsl(252, 100%, 67%);
+    --RoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(276, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --Lavender: hsl(241, 100%, 96%);
+    --GrayBlue: hsl(224, 30%, 27%);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        display: flex;
+    }
+
+    .card {
+        background-color: var(--RoyalBlue);
+        border-radius: 1rem;
+        color: white;
+        padding: 50px;
+    }
+
+    div {
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
