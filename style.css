@@ -12,21 +12,55 @@
     --GrayBlue: hsl(224, 30%, 27%);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     body {
         display: flex;
+        flex-direction: column;
+        padding: 20px;
     }
 
     .card {
         background-color: var(--RoyalBlue);
-        border-radius: 1rem;
+        border-radius: 0 0 30px 30px;
         color: white;
         padding: 50px;
+        margin: 0 10px;
     }
 
     div {
-        margin: 0 auto;
+        margin: 15px auto;
+        border: 1px solid white;
+        border-radius: 9px;
+        padding: 20px;
+
+    }
+
+    .reaction {
+        background-color: hsla(0, 100%, 67%, 0.05);
+        color: var(--lightRed);
+    }
+
+    .memory {
+        background-color: hsla(39, 100%, 56%, 0.05);
+        color: var(--OrangeYellow);
+    }
+
+    .verbal {
+        background-color: hsla(166, 100%, 37%, 0.05);
+        color: var(--GreenTeal);
+    }
+
+    .visual {
+        background-color: hsla(234, 85%, 45%, 0.05);
+        color: var(--CobaltBlue);
+    }
+
+    .btn {
+        background-color: var(--GrayBlue);
+        color: white;
         border-radius: 25px;
+        padding: 15px 100px;
+        margin: 10px;
     }
 
     .attribution { font-size: 11px; text-align: center; }
