@@ -12,54 +12,74 @@
     --GrayBlue: hsl(224, 30%, 27%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
     body {
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 15px;
+        align-items: center;
     }
 
     .card {
-        background-color: var(--RoyalBlue);
+        background-image: linear-gradient(var(--LightBlue), var(--RoyalBlue));
         border-radius: 0 0 30px 30px;
         color: white;
         padding: 50px;
         margin: 0 10px;
+
+    }
+
+    .score {
+        border-radius: 50%;
+        width: 50px;
+        background-image: linear-gradient(hsl(234, 85%, 45%), rgb(25, 0, 255));
+    }
+
+    .container {
+        padding: 5px 30px;
     }
 
     div {
-        margin: 15px auto;
+        margin: 10px auto;
         border: 1px solid white;
         border-radius: 9px;
-        padding: 20px;
+        padding: 1px 20px;
 
     }
 
     .reaction {
         background-color: hsla(0, 100%, 67%, 0.05);
         color: var(--lightRed);
+        display: flex;
+        justify-content: space-between;
     }
 
     .memory {
         background-color: hsla(39, 100%, 56%, 0.05);
         color: var(--OrangeYellow);
+        display: flex;
+        justify-content: space-between;
     }
 
     .verbal {
         background-color: hsla(166, 100%, 37%, 0.05);
         color: var(--GreenTeal);
+        display: flex;
+        justify-content: space-between;
     }
 
     .visual {
         background-color: hsla(234, 85%, 45%, 0.05);
         color: var(--CobaltBlue);
+        display: flex;
+        justify-content: space-between;
     }
 
     .btn {
         background-color: var(--GrayBlue);
         color: white;
         border-radius: 25px;
-        padding: 15px 100px;
+        padding: 15px 90px;
         margin: 10px;
     }
 
