@@ -7,7 +7,7 @@
     --RoyalBlue: hsla(241, 86%, 57%, 0.996);
     --VioletBlue: hsla(256, 72%, 46%, 0.8);
     --PersianBlue: hsla(241, 72%, 46%, 0);
-    --PaleBlue: hsl(221, 100%, 96%);
+    --PaleBlue: hsla(221, 100%, 96%, 0.7);
     --Lavender: hsl(241, 100%, 96%);
     --GrayBlue: hsl(224, 30%, 27%);
 }
@@ -16,8 +16,9 @@
     body {
         display: flex;
         flex-direction: column;
-        padding: 15px;
         align-items: center;
+        margin-top: 0;
+        padding-top: 0;
         font-size: 15px;
         font-family: 'Hanken Grotesk', sans-serif;
     }
@@ -25,23 +26,33 @@
     .card {
         background-image: linear-gradient(var(--LightBlue), var(--RoyalBlue));
         border-radius: 0 0 30px 30px;
-        color: white;
+        color: var(--PaleBlue);
         padding: 10px 40px;
-        margin: 0;
+        margin: 10px;
         text-align: center;
+        line-height: 1.5;
     }
 
     .score {
         border-style: none;
         border-radius: 50%;
-        width: 42%;
         background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
         line-height: 9px;
+        width: 42%;
+    }
+
+    header h3 {
+        color: white;
+        font-size: 25px;
     }
 
     .big {
         font-size: 50px;
         font-weight: bold;
+        color: white;
+    }
+
+    .small {
         color: var(--PaleBlue);
     }
 
