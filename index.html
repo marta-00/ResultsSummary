@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grostek">
   <title>Frontend Mentor | Results summary component</title>
   <script src="https://kit.fontawesome.com/4305287a30.js" crossorigin="anonymous"></script>
 </head>
@@ -12,8 +13,8 @@
  <header class="card">
   <p>Your Result</p>
   <div class="score">
-    <p>76</p>
-    <p>of 100</p>
+    <p class="big">76</p>
+    <p class="small">of 100</p>
   </div>
 
   <h3> Great</h3>
@@ -24,19 +25,19 @@
   <h4> Summary </h4>
   <div class="reaction">
     <p> <i class="fa-solid fa-bolt"></i> Reaction</p>
-    <p> 85 / 100</p>
+    <p class="number"> <span class="nmb">80</span> / 100</p>
   </div>
   <div class="memory">
     <p><i class="fa-solid fa-brain"></i> Memory </p>
-    <p> 92 / 100 </p>
+    <p class="number"> <span class="nmb">92</span> / 100 </p>
   </div>
   <div class="verbal">
     <p> <i class="fa-solid fa-comment"></i> Verbal </p> 
-    <p> 61 / 100 </p>
+    <p class="number"> <span class="nmb">61</span> / 100 </p>
   </div>
   <div class="visual">
     <p> <i class="fa-solid fa-eye"></i> Visual </p>
-    <p> 72 / 100 </p>
+    <p class="number"> <span class="nmb">72</span> / 100 </p>
   </div>
 
   <button class="btn">Continue</button>

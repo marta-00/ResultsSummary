@@ -5,7 +5,7 @@
     --CobaltBlue: hsl(234, 85%, 45%);
     --LightBlue: hsl(252, 100%, 67%);
     --RoyalBlue: hsl(241, 81%, 54%);
-    --VioletBlue: hsla(276, 72%, 46%, 1);
+    --VioletBlue: rgba(78, 33, 202, 0.752);
     --PersianBlue: hsla(241, 72%, 46%, 0);
     --PaleBlue: hsl(221, 100%, 96%);
     --Lavender: hsl(241, 100%, 96%);
@@ -18,6 +18,8 @@
         flex-direction: column;
         padding: 15px;
         align-items: center;
+        font-size: 18px;
+        font-family: 'Hanken Grotesk', sans-serif;
     }
 
     .card {
@@ -26,13 +28,19 @@
         color: white;
         padding: 50px;
         margin: 0 10px;
+        text-align: center;
 
     }
 
     .score {
         border-radius: 50%;
-        width: 50px;
-        background-image: linear-gradient(hsl(234, 85%, 45%), rgb(25, 0, 255));
+        background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
+    }
+
+    .big {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--PaleBlue);
     }
 
     .container {
@@ -73,6 +81,16 @@
         color: var(--CobaltBlue);
         display: flex;
         justify-content: space-between;
+    }
+
+    .number {
+        color: hsla(224, 30%, 27%, 0.5);
+        font-weight: bold;
+    }
+
+    .nmb {
+        color: var(--GrayBlue);
+        font-weight: bold;
     }
 
     .btn {
