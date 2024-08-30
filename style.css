@@ -4,8 +4,8 @@
     --GreenTeal: hsl(166, 100%, 37%);
     --CobaltBlue: hsl(234, 85%, 45%);
     --LightBlue: hsl(252, 100%, 67%);
-    --RoyalBlue: hsl(241, 81%, 54%);
-    --VioletBlue: rgba(78, 33, 202, 0.752);
+    --RoyalBlue: hsla(241, 86%, 57%, 0.996);
+    --VioletBlue: hsla(256, 72%, 46%, 0.8);
     --PersianBlue: hsla(241, 72%, 46%, 0);
     --PaleBlue: hsl(221, 100%, 96%);
     --Lavender: hsl(241, 100%, 96%);
@@ -33,8 +33,11 @@
     }
 
     .score {
+        border-style: none;
         border-radius: 50%;
+        height: 0%;
         background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
+        line-height: 5px;
     }
 
     .big {
