@@ -18,7 +18,7 @@
         flex-direction: column;
         padding: 15px;
         align-items: center;
-        font-size: 18px;
+        font-size: 15px;
         font-family: 'Hanken Grotesk', sans-serif;
     }
 
@@ -26,18 +26,17 @@
         background-image: linear-gradient(var(--LightBlue), var(--RoyalBlue));
         border-radius: 0 0 30px 30px;
         color: white;
-        padding: 50px;
-        margin: 0 10px;
+        padding: 10px 40px;
+        margin: 0;
         text-align: center;
-
     }
 
     .score {
         border-style: none;
         border-radius: 50%;
-        height: 0%;
+        width: 42%;
         background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
-        line-height: 5px;
+        line-height: 9px;
     }
 
     .big {
