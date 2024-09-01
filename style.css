@@ -12,52 +12,108 @@
     --GrayBlue: hsl(224, 30%, 27%);
 }
 
-@media only screen and (max-width: 375px) {
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card {
+    background-image: linear-gradient(var(--LightBlue), var(--RoyalBlue));
+    border-style: none;
+    color: var(--PaleBlue);
+    padding: 10px 40px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.score {
+    border-style: none;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
+    line-height: 9px;
+    width: 39%;
+}
+
+main h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.big {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.small {
+    color: var(--PaleBlue);
+}
+
+.container {
+    padding: 5px 30px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.05);
+    color: var(--lightRed);
+    display: flex;
+    justify-content: space-between;
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
+    color: var(--OrangeYellow);
+    display: flex;
+    justify-content: space-between;
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
+    color: var(--GreenTeal);
+    display: flex;
+    justify-content: space-between;
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+    color: var(--CobaltBlue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    color: hsla(224, 30%, 27%, 0.5);
+    font-weight: bold;
+}
+
+.nmb {
+    color: var(--GrayBlue);
+    font-weight: bold;
+}
+
+.btn {
+    background-color: var(--GrayBlue);
+    color: white;
+    border-radius: 25px;
+    padding: 15px 90px;
+    margin: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px) {
     body {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         margin-top: 0;
         padding-top: 0;
-        font-size: 15px;
-        font-family: 'Hanken Grotesk', sans-serif;
     }
 
     .card {
-        background-image: linear-gradient(var(--LightBlue), var(--RoyalBlue));
         border-radius: 0 0 30px 30px;
-        color: var(--PaleBlue);
-        padding: 10px 40px;
-        margin: 10px;
-        text-align: center;
-        line-height: 1.5;
-    }
-
-    .score {
-        border-style: none;
-        border-radius: 50%;
-        background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
-        line-height: 9px;
-        width: 42%;
-    }
-
-    header h3 {
-        color: white;
-        font-size: 25px;
-    }
-
-    .big {
-        font-size: 50px;
-        font-weight: bold;
-        color: white;
-    }
-
-    .small {
-        color: var(--PaleBlue);
-    }
-
-    .container {
-        padding: 5px 30px;
+        margin: -10px 10px;
     }
 
     div {
@@ -68,108 +124,25 @@
 
     }
 
-    .reaction {
-        background-color: hsla(0, 100%, 67%, 0.05);
-        color: var(--lightRed);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .memory {
-        background-color: hsla(39, 100%, 56%, 0.05);
-        color: var(--OrangeYellow);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .verbal {
-        background-color: hsla(166, 100%, 37%, 0.05);
-        color: var(--GreenTeal);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .visual {
-        background-color: hsla(234, 85%, 45%, 0.05);
-        color: var(--CobaltBlue);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .number {
-        color: hsla(224, 30%, 27%, 0.5);
-        font-weight: bold;
-    }
-
-    .nmb {
-        color: var(--GrayBlue);
-        font-weight: bold;
-    }
-
-    .btn {
-        background-color: var(--GrayBlue);
-        color: white;
-        border-radius: 25px;
-        padding: 15px 90px;
-        margin: 10px;
-    }
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 600px) {
     body {
-        display: flex;
         align-content: center;
         flex-wrap: wrap;
         padding: 18vh;
-        flex-direction: column;
-        font-size: 15px;
-        font-family: 'Hanken Grotesk', sans-serif;
     }
 
     .card {
-        background-image: linear-gradient(var(--LightBlue), var(--RoyalBlue));
-        border-style: none;
-        border-radius: 30px;
-        color: var(--PaleBlue);
-        padding: 10px 40px;
         margin: 0px;
-        line-height: 1.5;
         height: 375px;
         width: 200px;
-        text-align: center;
+        border-radius: 30px;
     }
 
     .score {
-        border-style: none;
-        border-radius: 50%;
-        background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
-        line-height: 9px;
         position: relative;
         left: 35px;
-        width: 45%;
-    }
-
-    main h3 {
-        color: white;
-        font-size: 25px;
-    }
-
-    .big {
-        font-size: 50px;
-        font-weight: bold;
-        color: white;
-    }
-
-    .small {
-        color: var(--PaleBlue);
-    }
-
-
-    .container {
-        padding: 5px 30px;
     }
 
     div {
@@ -177,52 +150,6 @@
         border-style: none;
         border-radius: 9px;
         padding: 1px 20px;
-    }
-
-    .reaction {
-        background-color: hsla(0, 100%, 67%, 0.05);
-        color: var(--lightRed);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .memory {
-        background-color: hsla(39, 100%, 56%, 0.05);
-        color: var(--OrangeYellow);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .verbal {
-        background-color: hsla(166, 100%, 37%, 0.05);
-        color: var(--GreenTeal);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .visual {
-        background-color: hsla(234, 85%, 45%, 0.05);
-        color: var(--CobaltBlue);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .number {
-        color: hsla(224, 30%, 27%, 0.5);
-        font-weight: bold;
-    }
-
-    .nmb {
-        color: var(--GrayBlue);
-        font-weight: bold;
-    }
-
-    .btn {
-        background-color: var(--GrayBlue);
-        color: white;
-        border-radius: 25px;
-        padding: 15px 90px;
-        margin: 10px;
     }
 
     .box {
@@ -235,10 +162,6 @@
         box-shadow: 10px 10px 10px 0px var(--PaleBlue);
     }
 
-    .attribution { 
-        font-size: 11px; 
-        text-align: center;
-        padding: 20px
-    }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { padding: 20px;}
+    
 }
