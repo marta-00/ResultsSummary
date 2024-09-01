@@ -16,7 +16,10 @@
     body {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+
         margin-top: 0;
         padding-top: 0;
         font-size: 15px;
@@ -38,10 +41,10 @@
         border-radius: 50%;
         background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
         line-height: 9px;
-        width: 42%;
+
     }
 
-    header h3 {
+    main h3 {
         color: white;
         font-size: 25px;
     }
@@ -149,7 +152,7 @@
         width: 45%;
     }
 
-    header h3 {
+    main h3 {
         color: white;
         font-size: 25px;
     }
