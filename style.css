@@ -101,6 +101,12 @@ main h3 {
     margin: 10px;
 }
 
+.btn:hover {
+    background-image: linear-gradient(var(--LightBlue), var(--RoyalBlue));
+    color: white;
+    border-color: linear-gradient(var(--LightBlue), var(--RoyalBlue)); 
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
