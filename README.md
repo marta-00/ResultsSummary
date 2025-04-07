@@ -12,14 +12,12 @@ This project helps sharpen your **HTML**, **CSS**, and **JavaScript** skills by 
 Your mission (should you choose to accept it):
 
 - 📱 Build a responsive layout that adapts to all screen sizes
-- 🧠 Use a `data.json` file to populate scores dynamically (Bonus 💥)
 - 🎯 Implement hover and focus states for all interactive elements
 
 ## 💼 Project Features
 
 - 🧩 Component-based layout
 - 📱 Mobile-first responsive design
-- ⚙️ Dynamic rendering using JSON
 - 🖱️ Interactive hover/focus styles
 
 ## 🛠️ Built With
@@ -30,7 +28,6 @@ Your mission (should you choose to accept it):
 
 ## 🧠 What I Learned
 
-- 🔄 How to render content dynamically from a JSON file
 - 🔍 Fine-tuning layout using Flexbox and media queries
 - 🧪 Accessibility considerations for interactive elements
 - 🎨 Styling subtle shadows and gradients for modern UI
